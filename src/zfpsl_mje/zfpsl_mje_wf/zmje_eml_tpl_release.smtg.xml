@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SMTG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SMTG>
+    <HEADER>
+     <ID>ZMJE_EML_TPL_RELEASE</ID>
+     <VERSION>A</VERSION>
+     <CDS_VIEW>Z_C_MJE_EML_TPL</CDS_VIEW>
+     <IS_PREDELIVERED>X</IS_PREDELIVERED>
+    </HEADER>
+    <HEADER_T>
+     <SMTG_TMPL_HDR_T>
+      <ID>ZMJE_EML_TPL_RELEASE</ID>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <NAME>MJE Email Notification Template</NAME>
+      <DESCRIPTION>MJE Email Notification Template - Release</DESCRIPTION>
+     </SMTG_TMPL_HDR_T>
+    </HEADER_T>
+    <CONTENT>
+     <SMTG_TMPL_CONT>
+      <ID>ZMJE_EML_TPL_RELEASE</ID>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <SUBJECT>RE: {{doc_key}} - {{status}}.</SUBJECT>
+      <BODY_TXT>Dear {{initiator_id}},
+Kindly be advised that manual journal documents of {{doc_key}} has been {{status}} by {{approver_id}}.
+Please go to {{email_link}} to review decision detail and/or contact approver for more infomation. Thank you.</BODY_TXT>
+      <BODY_HTML>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;HTML Tidy for HTML5 for ABAP version 5.6.0&quot;&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Dear {{initiator_id}},
+&lt;br /&gt;&lt;br /&gt;
+Kindly be advised that manual journal documents of {{doc_key}} has been &lt;b&gt;{{status}}&lt;/b&gt; by {{approver_id}}.&lt;br /&gt;&lt;br /&gt;Please go to {{email_link}} to review decision detail and/or contact approver for more infomation. Thank you.
+&lt;br /&gt;&lt;br /&gt;
+&lt;hr&gt;
+&lt;img src=&quot;https://www.adweko.com/wp-content/uploads/2023/07/MicrosoftTeams-image-15-1.png&quot; width=&quot;235&quot; height=&quot;100&quot;&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</BODY_HTML>
+     </SMTG_TMPL_CONT>
+    </CONTENT>
+   </SMTG>
+  </asx:values>
+ </asx:abap>
+</abapGit>

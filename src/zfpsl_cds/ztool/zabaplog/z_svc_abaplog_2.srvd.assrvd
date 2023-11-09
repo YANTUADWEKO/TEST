@@ -1,0 +1,8 @@
+@EndUserText.label: 'Service Definition - ABAP Log Monitor'
+define service Z_SVC_ABAPLOG_2 {
+  expose Z_C_ABAPLOG_2 as ZABAPLOG2;
+  expose Z_C_ABAPLOG_MSG_2 as ZABAPLOGMSG2;
+  expose Z_C_ABAPLOG_PARAM_2 as ZABAPLOGPARAM2;
+  expose Z_C_ABAPLOG_OBJ_2 as ZABAPLOGOBJ2;
+  expose Z_SH_BALHDR as ZBALHDR;
+}

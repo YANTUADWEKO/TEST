@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition - Z_I_SLPD_R'
+define service Z_SVC_I_SLPD_R {
+  expose Z_I_SLPD_R as SLPD_R;
+  expose /BA1/CBR_LGENT as LGENT;
+}

@@ -1,0 +1,41 @@
+@Metadata.layer: #PARTNER
+annotate view Z_I_SLPD_R with
+{
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}]
+  }
+  /ba1/c55postd;
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}]
+  }
+  /ba1/c55lgent;
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}],
+  selectionField: [{position: 10 }]
+  }
+  /ba1/c55docnum;
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}]
+  }
+  /ba1/c55docitm;
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}]
+  }
+  /ba1/c55accsy;
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}]
+  }
+  /ba1/c35btran;
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}]
+  }
+  /ba1/c35btsrc;
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}]
+  }
+  /ba1/k5samobj;
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}]
+  }
+  /ba1/objCurr;
+}

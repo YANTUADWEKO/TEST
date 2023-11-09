@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Expose for ZC_FPSL_BTREGISTER'
+define service Z_EXPOSE_FPSL_BTREGISTER {
+  expose ZC_FPSL_BTRegister as BT_REGISTER;
+}

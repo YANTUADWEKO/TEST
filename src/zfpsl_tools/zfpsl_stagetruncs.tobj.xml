@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <OBJH>
+    <OBJECTNAME>ZFPSL_STAGETRUNC</OBJECTNAME>
+    <OBJECTTYPE>S</OBJECTTYPE>
+    <OBJCATEG>APPL</OBJCATEG>
+    <IMPORTABLE>3</IMPORTABLE>
+   </OBJH>
+   <OBJT>
+    <LANGUAGE>E</LANGUAGE>
+    <OBJECTNAME>ZFPSL_STAGETRUNC</OBJECTNAME>
+    <OBJECTTYPE>S</OBJECTTYPE>
+    <DDTEXT>FPSL: Data load staging table truncation settings</DDTEXT>
+   </OBJT>
+   <OBJS>
+    <OBJS>
+     <OBJECTNAME>ZFPSL_STAGETRUNC</OBJECTNAME>
+     <OBJECTTYPE>S</OBJECTTYPE>
+     <TABNAME>ZFPSL_STAGETRUNC</TABNAME>
+     <DDIC>X</DDIC>
+     <PRIM_TABLE>X</PRIM_TABLE>
+    </OBJS>
+   </OBJS>
+   <TOBJ>
+    <TDDAT>
+     <TABNAME>ZFPSL_STAGETRUNC</TABNAME>
+     <CCLASS>&amp;NC&amp;</CCLASS>
+    </TDDAT>
+    <TVDIR>
+     <TABNAME>ZFPSL_STAGETRUNC</TABNAME>
+     <AREA>ZFPSL_TOOLS</AREA>
+     <DEVCLASS>ZFPSL_TOOLS</DEVCLASS>
+     <TYPE>1</TYPE>
+     <LISTE>0100</LISTE>
+     <BASTAB>X</BASTAB>
+    </TVDIR>
+    <TVIMF>
+     <TVIMF>
+      <TABNAME>ZFPSL_STAGETRUNC</TABNAME>
+      <EVENT>05</EVENT>
+      <FORMNAME>CHECK_SCHEMA</FORMNAME>
+     </TVIMF>
+     <TVIMF>
+      <TABNAME>ZFPSL_STAGETRUNC</TABNAME>
+      <EVENT>01</EVENT>
+      <FORMNAME>ON_SAVE_CHANGES</FORMNAME>
+     </TVIMF>
+    </TVIMF>
+   </TOBJ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

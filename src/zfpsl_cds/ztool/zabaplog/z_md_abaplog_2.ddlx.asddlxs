@@ -1,0 +1,129 @@
+@Metadata.layer: #PARTNER
+@EndUserText.label: 'Composite View - ABAP Log Browser'
+@Search.searchable: true
+@UI: {
+    headerInfo: {
+      typeName: 'ABAP Log Detail',
+      typeNamePlural: 'ABAP Log List',
+      title: {
+        type: #STANDARD,
+        label: 'Log Number',
+        value: 'lognumber'
+      },
+      description: {
+        label: 'External ID',
+        value: 'extnumber' }
+    }
+}
+annotate view Z_C_ABAPLOG_2 with
+{
+  @UI.facet: [
+                { id:              'Logs',
+                    purpose:         #STANDARD,
+                      type:            #IDENTIFICATION_REFERENCE,
+                      label:           'Log Detail',
+                      position:        10 },
+
+                { id:              'Parameters',
+                    purpose:         #STANDARD,
+                    type:            #LINEITEM_REFERENCE,
+                    label:           'CVPM Run Parameters',
+                    position:        20,
+                    targetElement:   '_params',
+                    hidden:          #(is_cvpm) },
+
+                { id:              'Messages',
+                    purpose:         #STANDARD,
+                    type:            #LINEITEM_REFERENCE,
+                    label:           'Message List',
+                    position:        30,
+                    targetElement:   '_messages'},
+
+                { id:              'Objects',
+                    purpose:         #STANDARD,
+                    type:            #LINEITEM_REFERENCE,
+                    label:           'Error Object - Register',
+                    position:        40,
+                    targetElement:   '_objects',
+                    hidden:          #(is_reg) }
+                      ]
+
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}]
+  }
+  lognumber;
+  @UI           : {
+  lineItem      : [{position: 50, importance: #MEDIUM}]
+  }
+  @Search       : {
+  defaultSearchElement: true,
+  fuzzinessThreshold: 1
+  }
+  extnumber;
+  @UI           : {
+  lineItem      : [{position: 30, importance: #HIGH}]
+  }
+  @EndUserText  : {
+  label         : 'Log Object'
+  }
+  @Consumption.valueHelpDefinition: [{ distinctValues: true, entity: { name: 'Z_SH_BALHDR', element: 'object' } }]
+  object;
+  @UI           : {
+  lineItem      : [{position: 40, importance: #HIGH}]
+  }
+  @EndUserText  : {
+  label         : 'Log Subobject'
+  }
+  @Consumption.valueHelpDefinition: [{ distinctValues: true, entity: { name: 'Z_SH_BALHDR', element: 'subobject' } }]
+  subobject;
+  @UI           : {
+  lineItem      : [{position: 60, importance: #HIGH}],
+  identification: [{position: 20, label: 'Process Start Date' }],
+  selectionField: [{position: 20}]
+  }
+  aldate;
+  @UI           : {
+  lineItem      : [{position: 70, importance: #HIGH, label: 'User'}],
+  identification: [{position: 30, label: 'User' }],
+  selectionField: [{position: 30}]
+  }
+  @Search       : {
+  defaultSearchElement: true,
+  fuzzinessThreshold: 0.90
+  }
+  aluser;
+  @UI           : {
+  lineItem      : [{position: 80, importance: #LOW }],
+  identification: [{position: 40, label: 'Program' }]
+  }
+  @Search       : {
+  defaultSearchElement: true,
+  fuzzinessThreshold: 0.90
+  }
+  alprog;
+  @UI           : {
+  lineItem      : [{position: 20, importance: #LOW, label: 'Log Type'}],
+  selectionField: [{position: 10}]
+  }
+  @EndUserText  : {
+  label         : 'Log Type',
+  quickInfo     : 'Type of processes that own the log'
+  }
+  @Consumption.filter : {
+      selectionType : #SINGLE,
+      multipleSelections : true,
+      defaultValue : 'CVPM'
+  }
+  @Consumption.valueHelpDefinition: [{ distinctValues: true, entity: { name: 'Z_C_ABAPLOG_2', element: 'logtype' } }]
+  logtype;
+  @UI           : {
+  lineItem      : [{position: 20, importance: #LOW, label: 'Status', criticality: 'criticality'}],
+  selectionField: [{position: 40 }],
+  identification: [{position: 10, label: 'Overall Status', criticality: 'criticality' }]
+  }
+  @EndUserText  : {
+  label         : 'Status',
+  quickInfo     : 'Overall status of the run'
+  }
+  criticality;
+}

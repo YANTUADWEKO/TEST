@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZFPSL_MJE</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message class for FPSL MJE</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>&amp;1 &amp;2: Starting MJE user template upload.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Record processed: &amp;1.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Move and Transform successfully performed for document &amp;1.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>050</MSGNR>
+     <TEXT>&amp;1 MJE journals successfully submitted.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>051</MSGNR>
+     <TEXT>Release Requests successfully processed.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>201</MSGNR>
+     <TEXT>No release requests found in the worklist for approver &amp;1.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>202</MSGNR>
+     <TEXT>Select BT ID(s) to release/reject.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>203</MSGNR>
+     <TEXT>Attachment missing for one or more selected request(s).</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>400</MSGNR>
+     <TEXT>Errors during Preparer UI processing.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>401</MSGNR>
+     <TEXT>Error loading Org Unit data from table hrp1001.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>402</MSGNR>
+     <TEXT>Cannot find approver for user &amp;1 in Org Structure.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>403</MSGNR>
+     <TEXT>Cannot find preparers for user &amp;1 in Org Structure.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>404</MSGNR>
+     <TEXT>Cannot send approval emails.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>405</MSGNR>
+     <TEXT>Error during MJE post-submission process. Check config and resubmit.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>406</MSGNR>
+     <TEXT>Cannot generate link to Fiori Launchpad.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>450</MSGNR>
+     <TEXT>Errors during Release UI processing.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>451</MSGNR>
+     <TEXT>Error reading manual posting release history from table /BA1/BR_ADJ_REL.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>500</MSGNR>
+     <TEXT>User upload failed: At least 1 validation error occurred.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>501</MSGNR>
+     <TEXT>Error parsing excel file. &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>502</MSGNR>
+     <TEXT>Empty field header in upload file. Check upload template.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>503</MSGNR>
+     <TEXT>Field &amp;1 does not exist in MJE document structure.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>504</MSGNR>
+     <TEXT>Error reading field &amp;1 from uploaded MJE postings.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>510</MSGNR>
+     <TEXT>Error: can&apos;t save user upload to system memory.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>511</MSGNR>
+     <TEXT>Error: can&apos;t load user upload from system memory.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>512</MSGNR>
+     <TEXT>Error during MJE user upload template processing.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>550</MSGNR>
+     <TEXT>Error during data type validation.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>551</MSGNR>
+     <TEXT>Incorrect date value for field &amp;1: &amp;2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>552</MSGNR>
+     <TEXT>Incorrect numeric text value for field &amp;1: &amp;2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>553</MSGNR>
+     <TEXT>Incorrect numeric value for field &amp;1: &amp;2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>600</MSGNR>
+     <TEXT>Error during master data validation.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>601</MSGNR>
+     <TEXT>Can&apos;t find result storage info for category &amp;1. Using FPSL Default.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>602</MSGNR>
+     <TEXT>Error reading MJE control table.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>603</MSGNR>
+     <TEXT>Error reading MJE user group values.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>604</MSGNR>
+     <TEXT>Error reading MJE field data types.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>605</MSGNR>
+     <TEXT>Error creating FPSL derivation helper.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>610</MSGNR>
+     <TEXT>&amp;1: Mandatory field &amp;2 not found in uploaded file.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>611</MSGNR>
+     <TEXT>&amp;1: Value missing/incorect in mandatory field: &amp;2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>615</MSGNR>
+     <TEXT>&amp;1: &quot;&amp;2&quot; is not a valid currency code.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>620</MSGNR>
+     <TEXT>&amp;1: Error reading master data table &amp;2. Check FPSL customizing.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>621</MSGNR>
+     <TEXT>&amp;1: master data value &quot;&amp;2&quot; is invalid for &amp;3.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>622</MSGNR>
+     <TEXT>&amp;1: Error validating &amp;2 during dynamic method call.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>650</MSGNR>
+     <TEXT>&amp;1: Error performing ad-hoc check for &amp;2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>651</MSGNR>
+     <TEXT>&amp;1: Posting date &quot;&amp;2&quot; is in closed period of legal entity &amp;3.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>652</MSGNR>
+     <TEXT>&amp;1: Posting date of reset &quot;&amp;2&quot; is earlier than posting date &quot;&amp;3&quot;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>655</MSGNR>
+     <TEXT>&amp;1: Dr/Cr amount rule violated: &amp;2 | &amp;3.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>656</MSGNR>
+     <TEXT>&amp;1: Accounting system &quot;&amp;2&quot; not allowed for legal entity &quot;&amp;3&quot;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>700</MSGNR>
+     <TEXT>&amp;1: Total &quot;&amp;2&quot; of amount field &amp;3 &lt;&gt; 0.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>711</MSGNR>
+     <TEXT>Error initializing Move and Transform process.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFPSL_MJE</ARBGB>
+     <MSGNR>712</MSGNR>
+     <TEXT>Move and Transform failed for document &amp;1.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

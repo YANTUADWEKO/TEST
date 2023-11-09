@@ -1,0 +1,119 @@
+@Metadata.layer: #PARTNER
+@EndUserText.label: 'Composite View - ABAP Log Browser'
+@Search.searchable: true
+@UI: {
+    headerInfo: {
+      typeName: 'ABAP Log',
+      typeNamePlural: 'ABAP Logs',
+      title: {
+        type: #STANDARD,
+        label: 'Log Number',
+        value: 'lognumber'
+      }
+    }
+}
+annotate view Z_C_ABAPLOG_1 with
+{
+  @UI.facet: [ { id:              'Logs',
+                      purpose:         #STANDARD,
+                      type:            #IDENTIFICATION_REFERENCE,
+                      label:           'Log Detail',
+                      position:        10 },
+
+//                { id:              'Parameters',
+//                    purpose:         #STANDARD,
+//                    type:            #LINEITEM_REFERENCE,
+////                    label:           'CVPM Run Parameters',
+////                    label:           #(is_cvpm),
+//                    position:        20,
+//                    targetElement:   '_params',
+//                    hidden: #(is_cvpm)},
+
+                { id:              'Messages',
+                    purpose:         #STANDARD,
+                    type:            #LINEITEM_REFERENCE,
+                    label:           'Message List',
+                    position:        30,
+                    targetElement:   '_messages'}    ]
+
+  @UI           : {
+  lineItem      : [{position: 10, importance: #HIGH}],
+  identification: [{position: 10, label: 'Log Number' }]
+  }
+  lognumber;
+  @UI           : {
+  lineItem      : [{position: 50, importance: #MEDIUM}],
+  identification: [{position: 20, label: 'External Process ID' }]
+  }
+  @Search       : {
+  defaultSearchElement: true,
+  fuzzinessThreshold: 0.90
+  }
+  extnumber;
+  @UI           : {
+  lineItem      : [{position: 30, importance: #HIGH}],
+  selectionField: [{position: 20 }]
+  }
+  @Consumption.filter : {
+      selectionType : #SINGLE,
+      multipleSelections : true,
+      defaultValue : '/BA1/FW'
+  }
+  @EndUserText  : {
+  label         : 'Log Object'
+  }
+  object;
+  @UI           : {
+  lineItem      : [{position: 40, importance: #HIGH}],
+  selectionField: [{position: 30 }]
+  }
+  @EndUserText  : {
+  label         : 'Log Subobject'
+  }
+  subobject;
+  @UI           : {
+  lineItem      : [{position: 60, importance: #HIGH}],
+  identification: [{position: 30, label: 'Process Start Date' }]
+  }
+  aldate;
+  @UI           : {
+  lineItem      : [{position: 70, importance: #HIGH, label: 'User'}],
+  identification: [{position: 40, label: 'User' }]
+  }
+  @Search       : {
+  defaultSearchElement: true,
+  fuzzinessThreshold: 0.90
+  }
+  aluser;
+  @UI           : {
+  lineItem      : [{position: 80, importance: #LOW}]
+  }
+  @Search       : {
+  defaultSearchElement: true,
+  fuzzinessThreshold: 0.90
+  }
+  alprog;
+  @UI           : {
+  lineItem      : [{position: 20, importance: #LOW, label: 'Log Type'}],
+  selectionField: [{position: 10}]
+  }
+  @EndUserText  : {
+  label         : 'Log Type',
+  quickInfo     : 'Type of processes that own the log'
+  }
+  logtype;
+  @UI           : {
+  lineItem      : [{position: 20, importance: #LOW, label: 'Status', criticality: 'criticality'}],
+  selectionField: [{position: 40 }],
+  identification: [{position: 50, label: 'Overall Status', criticality: 'criticality' }]
+  }
+  @EndUserText  : {
+  label         : 'Status',
+  quickInfo     : 'Status of the run'
+  }
+  criticality;
+  
+//  @UI           : { 
+//  lineItem      : [{ importance: #LOW, label: 'COUNT (Use with GROUP)' }]}
+//  row_count;
+}
